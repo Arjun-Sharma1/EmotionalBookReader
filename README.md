@@ -1,6 +1,8 @@
 # IBMHacks
 Emotional BookReader
 
+Video Demo: http://recordit.co/wqS4ZJVrl7
+
 How to run this application:
 
 Step 1) Clone the repo on your machine
