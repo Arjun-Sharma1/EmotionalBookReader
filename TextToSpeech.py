@@ -1,4 +1,5 @@
 from watson_developer_cloud import TextToSpeechV1
+import os
 import TextToTone as tone
 text_to_speech = TextToSpeechV1(
     username='469c306e-f6d0-4d31-87b3-f603817fb40d',
@@ -15,7 +16,11 @@ words2 = ["I love you!",
                 "I am so sorry",
                     "No wait, I love everyone!"]
 def convert_text_to_speech(words):
-    with open('emotional_read.wav', 'wb') as audio_file:
+    try:
+        os.remove("static/emotional_read.wav")
+    except OSError:
+        pass
+    with open('static/emotional_read.wav', 'wb') as audio_file:
         for word in words:
             audio_file.write(
                 text_to_speech.synthesize(
