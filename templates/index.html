@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <h1>Book Reader</h1>
+    <title>Book Reader</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
   </head>
-  <body>
-    <form action="" method="post">
-      <input type="text" name="inputText">
-      <input type="submit" name="action" value="Submit"/>
-    </form>
+    <body>
+      <div class="content">
+      <header>
+        <h1 align="center">Book Reader</h1>
+      </header>
+      <form action="" method="post">
+        <div class="buttonHolder">
+          <textarea id=inputText type="text" name="inputText"></textarea></br>
+          <input id="submitButton" type="submit" name="action" value="Submit"/>
+        </div>
+      </form>
+      </div>
   </body>
 </html>
