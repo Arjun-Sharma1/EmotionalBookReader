@@ -1,0 +1,29 @@
+#inputText{
+  height:350px;
+  word-wrap: break-word;
+  width: 500px;
+  font-size: 14px;
+}
+
+.content {
+    max-width: 500px;
+    margin: auto;
+}
+
+#submitButton {
+  align: center;
+  height: 50px;
+  width: 125px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+#submitButton:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    left: 100px;
+}
+
+.buttonHolder{ text-align: center; }
+
+h1 { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 50px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
